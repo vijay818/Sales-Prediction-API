@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <h3>Sales Forecasting Form</h3>
+
+
+<div>
+    <form action="/result" method="POST">
+        <label for="Store">Store</label>
+        <input type="text" id="Store" name="Store">
+        <br>
+        <br>
+        <label for="CompetitionDistance">CompetitionDistance</label>
+        <input type="text" id="CompetitionDistance" name="CompetitionDistance">
+        <br>
+        <br>
+        <label for="Promo">Promo</label>
+        <input type="text" id="Promo" name="Promo">
+        <br>
+        <br>
+        <label for="Promo2">Promo2</label>
+        <input type="text" id="Promo2" name="Promo2">
+        <br>
+        <br>
+        <label for="SchoolHoliday">SchoolHoliday</label>
+        <input type="text" id="SchoolHoliday" name="SchoolHoliday">
+        <br>
+        <br>
+        <label for="StoreType">StoreType</label>
+        <input type="text" id="StoreType" name="StoreType">
+        <br>
+        <br>
+        <label for="Assortment">Assortment</label>
+        <input type="text" id="Assortment" name="Assortment">
+        <br>
+        <br>
+        <label for="StateHoliday">StateHoliday</label>
+        <input type="text" id="StateHoliday" name="StateHoliday">
+        <br>
+        <br>
+        <label for="DayOfWeek">DayOfWeek</label>
+        <input type="text" id="DayOfWeek" name="DayOfWeek">
+        <br>
+        <br>
+        <label for="Month">Month</label>
+        <input type="text" id="Month" name="Month">
+        <br>
+        <br>
+        <label for="Day">Day</label>
+        <input type="text" id="Day" name="Day">
+        <br>
+        <br>
+        <label for="Year">Year</label>
+        <input type="text" id="Year" name="Year">
+        <br>
+        <br>
+        <label for="WeekOfYear">WeekOfYear</label>
+        <input type="text" id="WeekOfYear" name="WeekOfYear">
+        <br>
+        <br>
+        <label for="CompetitionOpen">CompetitionOpen</label>
+        <input type="text" id="CompetitionOpen" name="CompetitionOpen">
+        <br>
+        <br>
+        <label for="PromoOpen">PromoOpen</label>
+        <input type="text" id="PromoOpen" name="PromoOpen">
+        <br>
+        <br>
+        <label for="IsPromoMonth">IsPromoMonth</label>
+        <input type="text" id="IsPromoMonth" name="IsPromoMonth">
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        
+    </form>
+    
+    <br>
+    <br>
+    {{ prediction_text }}
+</div>
+</body>
+</html>
